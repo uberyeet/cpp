@@ -5,9 +5,9 @@ int main()
     int k{ 0 }, n[256]{}, numOfElem{ 0 };
     bool isAscending = true, isDescending = true;
     std::cout << "k="; std::cin >> k;
-alegeIar:
-    std::cout << "number of elements="; std::cin >> numOfElem;
-    if (numOfElem <= k) goto alegeIar;
+chooseAgain:
+    std::cout << "Number of elements="; std::cin >> numOfElem;
+    if (numOfElem <= k) goto chooseAgain;
     for (int i{ 0 }; i < numOfElem; i++)
     {
         std::cout << "n[" << i + 1 << "]= "; std::cin >> n[i];
